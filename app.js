@@ -30,9 +30,6 @@ saveButton.addEventListener("click", function (event) {
     if (signaturePad.isEmpty()) {
         alert("Please provide signature first.");
     } else {
-		var sig = new Image();
-		sig.src = signaturePad.toDataUrl();
-		document.appendImage(sig);
-        //window.open(signaturePad.toDataURL());
+        window.open(signaturePad.toDataURL());
     }
 });
