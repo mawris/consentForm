@@ -1,0 +1,46 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Signature Pad demo</title>
+  <meta name="description" content="Signature Pad - HTML5 canvas based smooth signature drawing using variable width spline interpolation.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link rel="stylesheet" href="signature-pad.css">
+
+</head>
+<body onselectstart="return false">
+<div>
+
+<!-- Sample text for the form. 
+Probably will put it on its own page, launch the signature pad in a separate window with 'save' populating a canvas area on the original form. 
+Will add button @ end to save form/page in some useful format... email to some address? Not sure what should happen at the end. -->
+
+<p align="center">
+<h1 align="center">Consent to be contacted for feedback</h1>
+
+<p align="center">I would like to provide feedback on support received today through MBLS Project.</p>
+<p align="center">I consent to be contacted within the next two weeks.</p>
+<p align="center">I understand that this is voluntary and will not impact any support I may receive from MBLS Project in the future.</p>
+
+</div>
+  <div id="signature-pad" class="m-signature-pad">
+    <div class="m-signature-pad--body">
+      <canvas></canvas>
+    </div>
+    <div class="m-signature-pad--footer">
+      <div class="description">Sign above</div>
+      <button class="button clear" data-action="clear">Clear</button>
+      <button class="button save" data-action="save">Save</button>
+    </div>
+  </div>
+
+  <script src="signature_pad.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
